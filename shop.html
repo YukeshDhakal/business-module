@@ -1,0 +1,172 @@
+<html>
+<head>
+  <link rel="icon" href="logo.png">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-family: sans-serif;
+    }
+    .banner{
+      width: 100%;
+      height: 100vh;
+      background-color: #3B4546;
+      background-size: cover;
+      background-position: center;
+    }
+    .navbar{
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo{
+      width: 150px;
+      cursor: pointer;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+    }
+    .navbar ul li::after{
+      content:'';
+      height: 3px;
+      width: 0;
+      position: absolute;
+      background: #099fff;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+      width: 100%;
+    }
+    .content{
+      width: 100%;
+      position: 100%;
+      top: 50%;
+      transform: translateY(50%);
+      text-align: center;
+      color: white;
+    }
+    #loading{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white
+      url('https://micro-measurements.com/sites/all/themes/vpg/images/double-ring.gif')
+      no-repeat center;
+      z-index: 99999;
+    }
+    .name{
+      font-weight: 40px;
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+
+    }
+    img{
+      cursor: pointer;
+      border-radius: 5%;
+    }
+    img:hover{
+      opacity: 80%;
+    }
+    h4{
+      text-align: center;
+    }
+    a:hover{
+      color: #0DEEC5;
+    }
+    a{
+      text-decoration: none;
+      transition: 0.5s;
+    }
+    .gta{
+      background-color: #252726;
+    }
+    .gta table{
+      margin-left: 8%;
+    }
+    .mc{
+      background: linear-gradient(#252726,#17273B);
+    }
+    .mc table{
+      margin-left: 28%;
+    }
+    table tr td p{
+      font-size: 12px;
+      text-align: center;
+      color: #DDDFE1;
+    }
+  </style>
+	<title>
+		Shop the best of the best games.
+	</title>
+</head>
+<body onload="load()">
+  <div id="loading"></div>
+  <div class="banner">
+    <div class="navbar">
+      <a href="index.html"><img src="img/LogoMakr.png" class="logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="aboutme.html">About us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="gta">
+    <div class="name">
+      <h2>GRAND THEFT AUTO</h2>
+    </div>
+      <table cellspacing="20px">
+        <tr>
+          <th><a href="gtafive.html"><img src="img/gtav.jpg" width="260px" height="400px"></a></th></th>
+          <th><a href="gtafour.html"><img src="img/gta4.jpg" width="260px" height="400px"></a></th>
+          <th><a href="gtasana.html"><img src="img/gtasa.jpg" width="260px" height="400px"></a></th>
+          <th><a href="gtavicecity.html"><img src="img/gtavc.jpg" width="260px" height="400px"></a></th>
+        </tr>
+        <tr>
+          <td><h4><a href="gtafive.html">GTA 5</a></h4><p>Rs. 2370</p></td>
+          <td><h4><a href="gtafour.html">GTA 4</a></h4><p>Rs. 1770</p></td>
+          <td><h4><a href="gtasana.html">GTA San Andreas</a></h4><p>Rs. 1420</p></td>
+          <td><h4><a href="gtavicecity.html">GTA Vice City</a></h4><p>Rs. 945</p></td>
+        </tr>
+      </table>
+    </div>
+    <div class="mc">
+    <div class="name">
+      <h2>MINECRAFT</h2>
+    </div>
+      <table cellspacing="20px">
+        <tr>
+          <th><a href="mcje.html"><img src="img/mcjava.png" width="260px" height="400px"></a></th>
+          <th><a href="mcpe.html"><img src="img/mcwin10.jpg" width="280px" height="400px"></a></th>
+        </tr>
+        <tr>
+          <td><h4><a href="mcje.html" class="pe">Minecraft java edition</a></h4><p>Rs. 3193</p></td>
+          <td><h4><a href="mcpe.html" class="pe">Minecraft windows 10 edition</a></h4><p>Rs. 3198</p></td>
+        </tr>
+      </table>
+    </div>
+  <script type="text/javascript">
+    var preloader = document.getElementById("loading");
+    function load() {
+      preloader.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

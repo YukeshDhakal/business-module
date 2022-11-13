@@ -1,0 +1,44 @@
+<html>
+<head>
+	<link rel="icon" href="logo.png">
+	<meta charset="utf-8">
+	<title>Log in or sign up</title>
+	<link rel="stylesheet" href="login.css">	
+	<script src="script.js" defer></script>
+</head>
+<body onload="load()">
+	<div id="loading"></div>
+	<div class="banner">
+    	<div class="navbar">
+      		<a href="index.html"><img src="img/LogoMakr.png" class="logo"></a>
+     	 	<ul>
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="shop.html">Shop</a></li>
+        		<li><a href="contactus.html">Contact us</a></li>
+        		<li><a href="aboutme.html">About us</a></li>
+      		</ul>
+    	</div>
+    	<div class="form">
+    		<div class="btn-box">
+    			<div id="btn"></div>
+    			<button type="button" class="toggle" onclick="login()">Log In</button>
+    			<button type="button" class="toggle" onclick="signin()">Sign Up</button>
+    		</div>
+    		<form class="input" id="login">
+    			<input type="text" class="field" placeholder="User Id"required>
+    			<input type="password" class="field" placeholder="Enter Password"required>
+    			<input type="checkbox" class="checkbox"><span>Remember Password</span>
+    			<button class="submit" type="submit"><a href="index.html" onclick="logg()">Log in</a></button>
+    	</form>
+    		<form class="input" id="signin">
+    			<input type="text" class="field" placeholder="User Id"required>
+    			<input type="email" class="field" placeholder="Email"required>
+    			<input type="password" class="field" placeholder="Enter Password"required>
+    			<input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+    			<button class="submit"><a href="index.html" onclick="signn()">Sign in</a></button>
+    	</form>
+    	</div>
+	 </div>
+	</script>
+</body>
+</html>

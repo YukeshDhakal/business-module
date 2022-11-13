@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color:black;
+  }
+  .navbar{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+  }
+  .logo{
+    width: 150px;
+    cursor: pointer;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #099fff;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+  #loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white
+    url('https://micro-measurements.com/sites/all/themes/vpg/images/double-ring.gif')
+    no-repeat center;
+    z-index: 99999;
+  }
+  .name{
+    font-weight: 40px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .back{
+    width: 100px;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid #099FFF;
+    background: transparent;
+    color: #555;
+    cursor: pointer;
+    transition: .5s;
+  }
+  button:hover{
+    background: #099FFF;
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .hero{
+    width: 100%;
+  }
+      .col{
+      flex-basis: 45%;
+      top: 0px;
+      margin-left: 18%;
+  }
+  .slider{
+      height: 80vh;
+      display: unset;
+  }
+  .product img{
+        height: 19vh;
+        margin-bottom: 9px;
+        cursor: pointer;
+        opacity: 0.6;
+        max-width: 250px;
+        margin-top: 2%;
+  }
+  .product img:hover{
+      opacity: 1;
+  }
+  .preview img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+      max-width: 100%;
+  }
+  p{
+    margin-bottom: 20px;
+  }
+  .brand{
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+  }
+      h2{
+          font-size: 45px;
+          color: #555;
+          margin-bottom: 20px;
+      }
+      .rating{
+          display: flex;
+          height: 15px;
+      }
+      .rating .fa{
+          color: #008000;
+      }
+      .price{
+          color: #fe980f;
+          font-size: 26px;
+          font-weight: bold;
+          padding-top: 10px;
+      }
+      input{
+          width: 30px;
+          border: 1px solid #ccc;
+          font-weight: bold;
+          text-align: center;
+      }
+      button{
+          color: #fff;
+          font-size: 15px;
+          outline: none;
+          border: 0;
+          border-radius: 5px;
+          background: #fe980f;
+          padding: 10px 15px;
+          box-sizing: border-box;
+          cursor: pointer;
+      }
+      button .fa{
+          margin-right: 10px;
+      
+      }
+      .related{
+          width: 90%;
+          margin: 0 auto 40px;
+      }
+      .related .row{
+          width: 100%;
+          height: auto;
+      }
+      .columns{
+          flex-basis: 22%;
+          height: 100%;
+      }
+      .items img{
+          width: 100%;
+      }
+      .details{
+          margin-top: 20px;
+      }
+      .details p{
+          font-size: 14px;
+          margin-bottom: 10px;
+      }
+      .details .rating{
+          margin: 10px 0;
+      }
+      .content{
+          margin-bottom: 10%;
+      }

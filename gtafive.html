@@ -1,0 +1,71 @@
+<html>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" href="logo.png">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="product.css">
+  <script src="script.js" defer></script>
+	<title>
+    Buy GTA V
+	</title>
+</head>
+<body onload="load()">
+  <div id="loading"></div>
+    <div class="navbar">
+      <a href="index.html"><img src="img/LogoMakr.png" class="logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="aboutme.html">About us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <a href="shop.html"><button type="button" class="back">Back</button></a>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <div class="product">
+                        <img src="img/gtav.jpg" alt="" onclick="clickme(this)">
+                        <img src="img/gtav(01).jpg" alt="" onclick="clickme(this)">
+                        <img src="img/gtav(02).jfif" alt="" onclick="clickme(this)">
+                        <img src="img/gtav(03).jpg" alt="" onclick="clickme(this)">
+                    </div>
+                    <div class="preview">
+                        <img src="img/gtav.jpg" id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand"></p>
+                    <h2>Grand Theft Auto V</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Developer: Rockstar Games</p>
+                    <p><h4>Platform:</h4> PC</p>
+                    <p><h3>Minimum System Requirements:</h3>OS: Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1 <br>
+Processor: Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz <br>
+Memory: 4 GB RAM <br>
+Graphics: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11) <br>
+Storage: 72 GB available space</p>
+                    <p>Select Purchase Option <select>
+                            <option selected>Grand Theft Auto V</option>
+                            <option>Grand Theft Auto V:Premium Edition</option>
+                            <option>Grand Theft Auto V: Premium Edition & Great White Shark Card Bundle</option>
+                        </select></p>
+                    <a href="shop.html"><button type="button" onclick="bought()">
+                        <i class="fa fa-shopping-cart"></i>
+                        Rs.2370</button></a>
+                </div>
+            </div>
+        </div>
+  </div>
+</body>
+</html>
